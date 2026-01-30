@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTube Player - Modern Video Experience</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+    
+    
+    <body>
+    <!-- Hero Section with Parallax -->
+    <div class="hero-section">
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">MyTube Player</h1>
+            <p class="hero-subtitle">Modern Video Experience</p>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Video Section -->
+        <div class="video-section">
+            <!-- Video Player -->
+            <div class="video-player-wrapper">
+                <video id="videoPlayer" controls>
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+                <div class="video-info">
+                    <div class="status">
+                        <div class="status-item">
+                            <span class="status-label">Status:</span>
+                            <span class="status-value paused" id="statusText">Paused</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Volume:</span>
+                            <span class="status-value" id="volumeText">100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event Log -->
+            <div class="event-log-wrapper">
+                <div class="event-log-header">Event Monitor</div>
+                <div class="event-log" id="eventLog"></div>
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <button class="sidebar-toggle" id="sidebarToggle" aria-label="Toggle sidebar">
+                ◀
+            </button>
+            <div class="sidebar-content">
+                <div class="sidebar-header">Suggested Videos</div>
+                <div class="suggested-video" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4">
+                    <div class="suggested-video-title">Big Buck Bunny - Full Movie</div>
+                    <div class="suggested-video-info">Blender Foundation • 596K views</div>
+                </div>
+                <div class="suggested-video" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4">
+                    <div class="suggested-video-title">Sintel - Animated Short Film</div>
+                    <div class="suggested-video-info">Blender Foundation • 1.2M views</div>
+                </div>
+                <div class="suggested-video" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4">
+                    <div class="suggested-video-title">Tears of Steel - Sci-Fi Short</div>
+                    <div class="suggested-video-info">Blender Foundation • 843K views</div>
+                </div>
+                <div class="suggested-video" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4">
+                    <div class="suggested-video-title">Elephants Dream</div>
+                    <div class="suggested-video-info">Blender Foundation • 512K views</div>
+                </div>
+                <div class="suggested-video" data-video-url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4">
+                    <div class="suggested-video-title">For Bigger Blazes</div>
+                    <div class="suggested-video-info">Google • 721K views</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
